@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCuNs9V4p-hNVFsK7ylDMMJGS9FuOx7LZk",
+            authDomain: "todoappfirebase-f0dba.firebaseapp.com",
+            databaseURL: "https://todoappfirebase-f0dba.firebaseio.com",
+            projectId: "todoappfirebase-f0dba",
+            storageBucket: "todoappfirebase-f0dba.appspot.com",
+            messagingSenderId: "402537164840",
+            appId: "1:402537164840:web:bdc2c006b176a8e937051d",
+            measurementId: "G-QYSTT5W3HR"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+</head>
+
+<body>
+
+    <div class="col-sm-10">
+        <input type="text" placeholder="Enter Task todo" name="" id="todo-item">
+        <button onclick="addTodo()" class="btn btn-success">Add</button>
+        <button onclick="deleteAll()" class="btn btn-warning">Delete All</button>
+    </div>
+    <div>
+        <ul id="list" class="col-sm-10"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

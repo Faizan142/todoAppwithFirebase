@@ -1,0 +1,23 @@
+
+.col-sm-10{
+    margin-top: 20px;
+    text-align: center;
+    margin:10px 10px 10px 10px;
+}
+ul li{
+    
+    list-style: none;
+       
+    
+}
+.btn {
+  margin-right: 20px;
+}
+.temp{
+    margin-left: 20px;
+}
+
+.todo-item{
+    margin-left:10px;
+}
+
